@@ -26,7 +26,7 @@ final AS (
     SELECT *,
         CASE
             WHEN dateDiff('minute', created_at_utc, started_at_utc) < 0 THEN NULL
-            WHEN dateDiff('minute', created_at_utc, started_at_utc) > 300 THEN NULL
+            WHEN dateDiff('minute', created_at_utc, started_at_utc) > 240 THEN NULL
             ELSE dateDiff('minute', created_at_utc, started_at_utc)
         END AS wait_time_minutes
     FROM cleaned
