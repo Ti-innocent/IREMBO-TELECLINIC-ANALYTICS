@@ -1,4 +1,4 @@
-# Irembo TeleClinic — Analytics Engineer Take-Home
+# Irembo TeleClinic
 
 This repository contains my submission for the Analytics Engineer assignment.
 
