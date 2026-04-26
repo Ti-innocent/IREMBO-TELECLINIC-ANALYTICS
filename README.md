@@ -2,7 +2,7 @@
 
 This repository contains my submission for the Analytics Engineer assignment.
 
-**Overview**
+## Overview
 This repository contains my solution to the Irembo TeleClinic Analytics Engineer assignment. It includes:
 
 - Root cause analysis of anomalies in referral rate and wait time.
