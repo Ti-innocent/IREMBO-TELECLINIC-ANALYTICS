@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_consultations_fixed
+    columns:
+      - name: consultation_id
+        tests: [unique, not_null]
+      - name: wait_time_minutes
+        tests: [not_null]
