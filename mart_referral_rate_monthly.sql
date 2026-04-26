@@ -5,7 +5,7 @@ SELECT
     COUNT(*) AS total_consultations,
 
     COUNTIf(referral_type IN ('doctor_referral','both')) * 1.0 / COUNT(*) AS doctor_referral_rate,
-    COUNTIf(referral_type IN ('patient_requested_only','both')) * 1.0 / COUNT(*) AS patient_requested_rat
+    COUNTIf(referral_type IN ('patient_requested_only','both')) * 1.0 / COUNT(*) AS patient_requested_rate
 
 FROM {{ ref('int_referrals_classified') }}
 
