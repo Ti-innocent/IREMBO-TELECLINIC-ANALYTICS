@@ -6,7 +6,7 @@ SELECT
     coalesce(req.referral_requested, 0) AS patient_flag,
 
     CASE
-        WHEN co.referral_issued = 1 AND req.referral_requested = 1 THEN 'both'
+        WHEN co.referral_issued = 1 AND req.referral_requested = 1 THEN 'boh'
         WHEN co.referral_issued = 1 THEN 'doctor_referral'
         WHEN req.referral_requested = 1 THEN 'patient_requested_only'
         ELSE 'no_referral'
