@@ -2,7 +2,7 @@ WITH monthly AS (
     SELECT
         month,
         doctor_referral_rate,
-        LAG(doctor_referral_rate) OVER (ORDER BY month) AS prev_rate
+        LAG(doctor_referral_rate) OVER (ORDER BY month) AS prev_rat
     FROM {{ ref('mart_referral_rate_monthly') }}
 )
 SELECT *
